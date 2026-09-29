@@ -1,21 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="720" height="220" viewBox="0 0 720 220" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="220" viewBox="0 0 760 220" role="img" aria-labelledby="title desc">
   <title id="title">ForkGate</title>
-  <desc id="desc">Three speculative branches pass through a controlled egress gate.</desc>
+  <desc id="desc">Connected branch paths pass through a single controlled egress.</desc>
   <defs>
     <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0b1220"/>
-      <stop offset="1" stop-color="#17233a"/>
+      <stop offset="0" stop-color="#0c172b"/>
+      <stop offset="1" stop-color="#16253e"/>
     </linearGradient>
-    <linearGradient id="path" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#38bdf8"/>
-      <stop offset="1" stop-color="#818cf8"/>
+    <linearGradient id="route" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#52c7f4"/>
+      <stop offset="1" stop-color="#8fa2ff"/>
     </linearGradient>
-    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#c084fc"/>
-      <stop offset="1" stop-color="#f472b6"/>
+    <linearGradient id="egress" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#cbb4f7"/>
+      <stop offset="1" stop-color="#f4c8f4"/>
     </linearGradient>
-    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
@@ -23,36 +23,33 @@
     </filter>
   </defs>
 
-  <rect x="5" y="5" width="710" height="210" rx="38" fill="url(#panel)" stroke="#2b3b58" stroke-width="2"/>
-  <path d="M42 177 H678" stroke="#ffffff" stroke-opacity=".06" stroke-width="1"/>
+  <rect x="5" y="5" width="750" height="210" rx="38" fill="url(#panel)" stroke="#30476b" stroke-width="2"/>
 
-  <g transform="translate(30 30)">
-    <rect width="160" height="160" rx="30" fill="#101c31" stroke="#314463" stroke-width="2"/>
+  <!-- One connected route: source node -> fork diamond -> controlled egress. -->
+  <g transform="translate(25 30)">
+    <rect width="178" height="160" rx="31" fill="#101e35" stroke="#30476b" stroke-width="2"/>
 
-    <g fill="none" stroke="url(#path)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" filter="url(#softGlow)">
-      <path d="M27 80 H57"/>
-      <path d="M57 80 L91 46 M57 80 L91 114"/>
-      <path d="M91 46 L119 80 M91 114 L119 80"/>
-      <path d="M119 80 H133"/>
+    <g fill="none" stroke="url(#route)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)">
+      <path d="M28 80 H72"/>
+      <path d="M72 80 L108 43 L144 80 L108 117 Z"/>
+      <path d="M144 80 H163"/>
     </g>
 
-    <g fill="#dff6ff" stroke="#38bdf8" stroke-width="4">
-      <circle cx="27" cy="80" r="10"/>
-      <circle cx="91" cy="46" r="10"/>
-      <circle cx="91" cy="114" r="10"/>
+    <g fill="#dff8ff" stroke="#44c5f2" stroke-width="4">
+      <circle cx="28" cy="80" r="10"/>
+      <circle cx="108" cy="43" r="10"/>
+      <circle cx="108" cy="117" r="10"/>
     </g>
 
-    <g fill="none" stroke="url(#bar)" stroke-width="8" stroke-linecap="round">
-      <path d="M133 38 V122"/>
-      <path d="M151 38 V122"/>
+    <g fill="none" stroke="url(#egress)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M163 80 H184"/>
+      <path d="m176 71 10 9-10 9"/>
     </g>
-    <path d="M151 80 H170" fill="none" stroke="#e9d5ff" stroke-width="5" stroke-linecap="round"/>
-    <path d="m164 72 9 8-9 8" fill="none" stroke="#e9d5ff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
 
-  <text x="230" y="113" fill="#f8fafc" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="76" font-weight="700" letter-spacing="-3">
-    <tspan>Fork</tspan><tspan fill="#67e8f9">Gate</tspan>
+  <text x="246" y="113" fill="#f8fafc" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="76" font-weight="700" letter-spacing="-3">
+    <tspan>Fork</tspan><tspan fill="#70ddf5">Gate</tspan>
   </text>
-  <text x="235" y="151" fill="#94a3b8" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18" font-weight="600" letter-spacing="4">BRANCH-AWARE EGRESS</text>
-  <circle cx="665" cy="151" r="4" fill="#67e8f9"/>
+  <text x="251" y="151" fill="#9aabc3" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18" font-weight="600" letter-spacing="4">BRANCH-AWARE EGRESS</text>
+  <circle cx="706" cy="151" r="4" fill="#70ddf5"/>
 </svg>
