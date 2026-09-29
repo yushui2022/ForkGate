@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/assets/forkgate-logo.svg" alt="ForkGate logo" width="480">
+</p>
+
 # ForkGate
 
 > 让可分叉的 Agent 沙箱安全地面对不可回滚的外部世界。
