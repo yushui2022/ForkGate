@@ -1,0 +1,5 @@
+2026/09/29 09:25:53 WARNING: non-loopback listeners explicitly enabled; use only on a private test network
+2026/09/29 09:25:53 branch identity enforcement enabled
+2026/09/29 09:25:53 SecretGuard enabled
+2026/09/29 09:25:53 data plane listening on http://0.0.0.0:3128
+2026/09/29 09:25:53 control plane listening on http://0.0.0.0:7070

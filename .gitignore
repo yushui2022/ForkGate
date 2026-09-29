@@ -1,0 +1,13 @@
+/bin/
+/data/
+*.db
+*.db-shm
+*.db-wal
+/dist/
+.env
+
+# Generated build and local test artifacts.
+__pycache__/
+*.py[cod]
+/output/**/build/
+/output/pelican-riding-bicycle.svg

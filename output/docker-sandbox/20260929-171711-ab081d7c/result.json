@@ -1,0 +1,11 @@
+{
+  "run_id": "20260929-171711-ab081d7c",
+  "status": "failed",
+  "backend": "Docker Desktop Linux containers",
+  "fork_mode": "docker commit filesystem snapshot; no memory/process restore",
+  "network_mode": "explicit HTTP proxy on an internal Docker network",
+  "docker_version": "29.8.0",
+  "base_image_id": "sha256:915835de46a63f9598442159437904042f1c69a9b41c4965fba1db9ceab66578",
+  "error": "The request was canceled due to the configured HttpClient.Timeout of 2 seconds elapsing.",
+  "finished_at": "2026-09-29T09:18:54.6791713Z"
+}

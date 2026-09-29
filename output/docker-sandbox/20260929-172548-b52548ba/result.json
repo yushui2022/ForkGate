@@ -1,0 +1,196 @@
+{
+  "run_id": "20260929-172548-b52548ba",
+  "status": "passed",
+  "backend": "Docker Desktop Linux containers",
+  "fork_mode": "docker commit filesystem snapshot; no memory/process restore",
+  "network_mode": "explicit HTTP proxy on an isolated user-defined Docker bridge; localhost-only published ports",
+  "docker_version": "29.8.0",
+  "base_image_id": "sha256:915835de46a63f9598442159437904042f1c69a9b41c4965fba1db9ceab66578",
+  "snapshot_image_id": "sha256:64b520cdcc81f1cf28b3d7c8cbfe7eae410fe7bdfdea933167b9840e56e0d569",
+  "lineage": {
+    "parent_container_id": "forkgate-20260929-172548-b52548ba-parent",
+    "snapshot_image_id": "sha256:64b520cdcc81f1cf28b3d7c8cbfe7eae410fe7bdfdea933167b9840e56e0d569",
+    "tree_id": "tr_3cf017ad0738a1a2de559ce51e93dd6f",
+    "children": [
+      {
+        "container_id": "7da405f37d1e9997e6902b80e2d368d66eb34d95ee998d164b151d4508296f82",
+        "image_id": "sha256:64b520cdcc81f1cf28b3d7c8cbfe7eae410fe7bdfdea933167b9840e56e0d569",
+        "inherited_seed": "20260929-172548-b52548ba",
+        "branch_id": "br_4c893338741a53139b60a5d144eb8d0d"
+      },
+      {
+        "container_id": "ea369db7725eb8d313d507334e4473b647c47f173673262ddddab5193211eff8",
+        "image_id": "sha256:64b520cdcc81f1cf28b3d7c8cbfe7eae410fe7bdfdea933167b9840e56e0d569",
+        "inherited_seed": "20260929-172548-b52548ba",
+        "branch_id": "br_11117d02c0125f3f46d90626db0775b6"
+      },
+      {
+        "container_id": "d905c28a076c434ade3a26e3a26a1749a0018ee01187fb19cd7767a7f4fa58e0",
+        "image_id": "sha256:64b520cdcc81f1cf28b3d7c8cbfe7eae410fe7bdfdea933167b9840e56e0d569",
+        "inherited_seed": "20260929-172548-b52548ba",
+        "branch_id": "br_1a81af85d282a7c6f8f46df77df3c931"
+      }
+    ],
+    "independent_writable_layers": true
+  },
+  "before_commit": {
+    "reads": 3,
+    "writes": 0,
+    "requests": []
+  },
+  "speculative_calls": [
+    {
+      "child": 1,
+      "seq": 1,
+      "status": 202,
+      "staged_id": "sw_a3ba992bae1dc533c1a88ae81f6d416c"
+    },
+    {
+      "child": 1,
+      "seq": 2,
+      "status": 202,
+      "staged_id": "sw_d32be79318ed5cbe084c663327e6159c"
+    },
+    {
+      "child": 2,
+      "seq": 1,
+      "status": 202,
+      "staged_id": "sw_67c5326b0dd560ab61978d97d0792218"
+    },
+    {
+      "child": 2,
+      "seq": 2,
+      "status": 202,
+      "staged_id": "sw_b791ee8352d330791646ac5b49ced861"
+    },
+    {
+      "child": 3,
+      "seq": 1,
+      "status": 202,
+      "staged_id": "sw_a6f1bc8f04230c5bb95ef3b4f77a74d9"
+    },
+    {
+      "child": 3,
+      "seq": 2,
+      "status": 202,
+      "staged_id": "sw_d8a5a726509566560befc8bfbdc03806"
+    }
+  ],
+  "after_commit": {
+    "reads": 4,
+    "writes": 2,
+    "requests": [
+      {
+        "method": "POST",
+        "path": "/effects",
+        "body": "{\"seq\":1,\"operation\":\"create-issue\"}",
+        "branch": "child-2"
+      },
+      {
+        "method": "POST",
+        "path": "/effects",
+        "body": "{\"seq\":2,\"operation\":\"create-issue\"}",
+        "branch": "child-2"
+      }
+    ]
+  },
+  "branch_results": [
+    {
+      "child": 1,
+      "response_status": 410,
+      "writes": [
+        {
+          "staged_id": "sw_a3ba992bae1dc533c1a88ae81f6d416c",
+          "branch_id": "br_4c893338741a53139b60a5d144eb8d0d",
+          "seq": 1,
+          "method": "POST",
+          "host": "forkgate-20260929-172548-b52548ba-upstream:8080",
+          "status": "discarded",
+          "created_at": "2026-09-29T09:26:03.405629877Z"
+        },
+        {
+          "staged_id": "sw_d32be79318ed5cbe084c663327e6159c",
+          "branch_id": "br_4c893338741a53139b60a5d144eb8d0d",
+          "seq": 2,
+          "method": "POST",
+          "host": "forkgate-20260929-172548-b52548ba-upstream:8080",
+          "status": "discarded",
+          "created_at": "2026-09-29T09:26:03.842637613Z"
+        }
+      ]
+    },
+    {
+      "child": 2,
+      "response_status": 410,
+      "writes": [
+        {
+          "staged_id": "sw_67c5326b0dd560ab61978d97d0792218",
+          "branch_id": "br_11117d02c0125f3f46d90626db0775b6",
+          "seq": 1,
+          "method": "POST",
+          "host": "forkgate-20260929-172548-b52548ba-upstream:8080",
+          "status": "succeeded",
+          "created_at": "2026-09-29T09:26:04.704415487Z"
+        },
+        {
+          "staged_id": "sw_b791ee8352d330791646ac5b49ced861",
+          "branch_id": "br_11117d02c0125f3f46d90626db0775b6",
+          "seq": 2,
+          "method": "POST",
+          "host": "forkgate-20260929-172548-b52548ba-upstream:8080",
+          "status": "succeeded",
+          "created_at": "2026-09-29T09:26:05.117429683Z"
+        }
+      ]
+    },
+    {
+      "child": 3,
+      "response_status": 410,
+      "writes": [
+        {
+          "staged_id": "sw_a6f1bc8f04230c5bb95ef3b4f77a74d9",
+          "branch_id": "br_1a81af85d282a7c6f8f46df77df3c931",
+          "seq": 1,
+          "method": "POST",
+          "host": "forkgate-20260929-172548-b52548ba-upstream:8080",
+          "status": "discarded",
+          "created_at": "2026-09-29T09:26:05.979453993Z"
+        },
+        {
+          "staged_id": "sw_d8a5a726509566560befc8bfbdc03806",
+          "branch_id": "br_1a81af85d282a7c6f8f46df77df3c931",
+          "seq": 2,
+          "method": "POST",
+          "host": "forkgate-20260929-172548-b52548ba-upstream:8080",
+          "status": "discarded",
+          "created_at": "2026-09-29T09:26:06.429088093Z"
+        }
+      ]
+    }
+  ],
+  "commit": {
+    "branch_id": "br_11117d02c0125f3f46d90626db0775b6",
+    "status": "committed",
+    "items": [
+      {
+        "staged_id": "sw_67c5326b0dd560ab61978d97d0792218",
+        "seq": 1,
+        "status": "succeeded",
+        "response_status": 201
+      },
+      {
+        "staged_id": "sw_b791ee8352d330791646ac5b49ced861",
+        "seq": 2,
+        "status": "succeeded",
+        "response_status": 201
+      }
+    ]
+  },
+  "sealed_parent_status": 503,
+  "direct_probe": {
+    "request": "GET /direct-probe without proxy",
+    "enforced_egress": false,
+    "status": 200
+  },
+  "finished_at": "2026-09-29T09:26:09.2397319Z"
+}

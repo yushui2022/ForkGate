@@ -1,0 +1,5 @@
+FROM scratch
+
+COPY --chmod=0755 forkgate-linux-amd64 /usr/local/bin/forkgate
+
+ENTRYPOINT ["/usr/local/bin/forkgate"]
